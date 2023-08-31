@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<body>
+    <div class="curser"></div>
+    <div class="contener">
+        <div class="navbar">
+                <div class="logo">
+                   <h3>Paisa.com</h3>
+                </div>
+                <nav>
+                <a href="#" class="navbut">HOME</a>
+                <a href="#" class="navbut">ABOUT US</a>
+                <a href="#" class="navbut">EVENTS</a>
+                <a href="#" class="mainbut">LOGIN</a>
+                </nav>
+            </div>
+        <div class="head">
+            <h1>Currency Converter</h1>
+        </div>   
+
+        <div class="con">
+            <div class="box">
+                <div class="aft">
+                    <h4>Amount</h4>
+                    <input placeholder="Enter Amount" id="Amount" type="number" >
+                    <h4>From</h4>
+                    <select name="cars" id="from">
+                        <option value="INR">INR</option>
+                        <option value="USD">USD</option>
+                        <option value="CAD">CAD</option>
+                        <option value="KRW">KRW</option>
+                    </select>
+
+                    
+                    <h4>To</h4>
+                    <select name="cars" id="to">
+                        <option value="INR">INR</option>
+                        <option value="USD">USD</option>
+                        <option value="CAD">CAD</option>
+                        <option value="KRW">KRW</option>
+                    </select>
+                    <div>
+                        <button class="btn">Convert</button>
+                    </div>
+                   
+
+                </div>
+                <div class="answer" >
+                    <h3 class="one"></h3>
+                    <h1 class="two"></h1>
+                    <h4 class="three"></h4>  
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+</body>
+</html>

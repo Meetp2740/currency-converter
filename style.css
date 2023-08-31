@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,700;1,300;1,400;1,500&family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:ital,wght@0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.curser{
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background-color: #000001;
+    position: absolute;
+ }
+
+.contener{
+    height: 150vh;
+    width: 100%;
+    position: relative;
+    /* background-color: #191513; */
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    margin: auto;
+    height: 70px;
+    /* background-color: transparent(255, 255, 255); */
+    background-color: #ffff;
+    
+}
+
+.logo h3{
+     width: 50px;
+     cursor: pointer;
+     margin: 16px 0px 15px 100px;
+     margin-bottom: 19px;
+     color: black;
+     font-family: sans-serif;
+}
+
+nav{
+    display: inline-block;
+    margin-right: 70px;
+}
+
+nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 15px;
+    /* padding:  5px 15px; */
+    margin-left: 40px;
+}
+.mainbut{
+       border-radius: 15px 0px 15px 15px;
+       border: 2px solid white;
+       padding: 12px;       
+}    
+
+.mainbut:hover{
+    background-color: rgba(1, 153, 250, 1);
+    color: white;
+}
+
+nav .navbut:hover{
+    color: rgba(1, 153, 250, 1);
+    border-radius: 2px;
+}
+
+.con{
+    display: flex;
+    justify-content: center;
+}
+
+.box{
+    background-color: white;
+    height: 400px;
+    width: 150vh;
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    /* justify-content: center; */
+    border-radius: 20px;
+}
+
+.head h1{
+    color: #333333;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    display: inline-block;
+    position: relative;
+    left: 40%;
+
+    }
+
+.head h1:after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        transform: scaleX(0);
+        height: 3px;
+        bottom: 0;
+        left: 0;
+        background-color: #000000;
+        transform-origin: bottom right;
+        transition: transform 0.25s ease-out;
+}
+
+.head h1:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.aft{
+    margin-left: 40px;
+}
+
+.aft input{
+     font-size: 15px;
+     height: 42px;
+     width: 300px;
+     border-radius: 5px;
+     padding: 5px;
+     margin-bottom: 20px;
+    color: #333333;
+
+    
+}
+
+#from{
+    height: 42px;
+    width: 300px;
+    margin-bottom: 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: rgb(109, 108, 108) 0.5px 0.5px 1px;
+    color: #333333;
+
+}
+
+#to{
+    height: 42px;
+    width: 300px;
+    font-size: 15px;
+    border-radius: 5px;
+    box-shadow: rgb(109, 108, 108) 0.5px 0.5px 1px;
+    color: #333333;
+
+}
+
+
+button{
+    background-color: #8BC6EC;
+    background-image: linear-gradient(135deg, #8BC6EC 0%, #9599E2 100%);
+    color: black;
+    height: 40px;
+    width: 70px;
+    border-radius: 10px;
+    border: none;
+    font-weight: 540;
+    margin-top: 15px;  
+    text-shadow: black; 
+}
+
+button:hover{
+    background-color: #2438cd;
+    color: rgb(249, 249, 249)  ;
+}
+
+
+.answer{
+    margin: 0px 0px 80px 50px;
+    font-size: 23px;
+    text-align: start;
+    /* flex-direction: row; */
+    position: relative;
+    
+}
+
+
+
+.answer .one {
+    margin-top: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.answer .two {
+    margin-top: 8px;
+    font-family: 'Poppins', sans-serif;
+    
+}
+
+.answer .three {
+    margin-top: 8px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.animation{
+    animation-name: meet;
+    animation-duration: 1s;
+}
+
+@keyframes meet{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+
+    }
+ }
+
+
